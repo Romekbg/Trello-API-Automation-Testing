@@ -5,24 +5,38 @@ This repository contains automation testing for Trello API endpoints using Postm
 The Trello API allows users to manage boards, lists, and cards programmatically. This project focuses on automating the testing of key endpoints related to board and task management.
 
 ## Key Automated API Tests:
+
 Create Board: Automatically test the creation of a new board.
+
 Get Board Details: Validate fetching details of a single board.
+
 Create TO DO List: Automate adding a new list to a board.
+
 Move Card: Ensure cards can be moved between lists.
+
 Delete Card: Verify that cards can be deleted.
-Automated API Endpoints
+
+## Automated API Endpoints
 The following endpoints are automated and tested:
 
 POST /1/boards/: Create a new board.
+
 GET /1/boards/{board_id}: Get details of a specific board.
+
 POST /1/boards/{board_id}/lists: Create a TO DO list on a board.
+
 POST /1/cards: Create a new card in the TO DO list.
+
 PUT /1/cards/{card_id}: Move card to another list.
+
 DELETE /1/cards/{card_id}: Delete a card.
 
 ## Tools Used
+
 Postman: For writing, automating, and running API tests.
+
 Newman: Used to run the Postman collection in CI/CD pipelines.
+
 GitHub: For version control and project repository.
 
 ## How to Use
